@@ -1,0 +1,24 @@
+<div class="card" id="<%= dom_id flat %>">
+  <p>
+    <h1><%= flat.name.capitalize %></h1>
+  </p>
+  <br>
+  <p>
+    <strong><%= flat.description %></strong>
+  </p>
+  <br>
+  <p>
+    <%= flat.address %>
+  </p>
+  <br>
+  <p>
+    <strong>Prix pour une nuit</strong>
+    <%= flat.price_per_night %>
+  </p>
+  <br>
+  <p>
+    <strong>Nombre de couchage</strong>
+    <%= flat.number_of_guests %>
+  </p>
+
+</div>

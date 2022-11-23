@@ -1,0 +1,10 @@
+<h1>All our flats<%= " #{Flat.count}"%></h1>
+
+<p><%= link_to 'Add a flat', new_flat_path%></p>
+
+<div id="flats">
+  <%@flats.each do|flat|%>
+    <%= render flat %>
+    <p><%= link_to "Voir ce flat", flat %></p>
+  <%end %>
+</div>
