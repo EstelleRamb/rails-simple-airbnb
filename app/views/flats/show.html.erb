@@ -14,4 +14,6 @@
   <p><%= @flat.number_of_guests %></p>
 </div>
 
+<%= link_to 'Edit this flat', edit_flat_path(@flat) %>
 <%= link_to 'Back to all flats', flats_path %>
+<%= button_to "Destroy this flat", @flat, method: :delete %>
