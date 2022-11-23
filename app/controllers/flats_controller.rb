@@ -14,6 +14,10 @@ class FlatsController < ApplicationController
     redirect_to flats_path
   end
 
+  def show
+    @flat = Flat.find(params[:id])
+  end
+
   private
 
   def flat_params
